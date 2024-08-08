@@ -33,14 +33,7 @@
         :rules="[ val => val && val.length > 0 || 'Please type your surname']"
       />
 
-        <q-input
-        filled
-        v-model="language"
-        label="ภาษา"
-        hint="เลือกภาษา"
-        lazy-rules
-        :rules="[ val => val && val.length > 0 || 'กรุณาเลือกภาษาที่คุณต้องการ']"
-      />
+        
 
       <q-input
         filled
@@ -83,7 +76,7 @@ export default {
     return {
       name,
       surname,
-      language,
+      
       id,
       age,
       accept,
