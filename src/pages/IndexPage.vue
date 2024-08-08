@@ -6,14 +6,7 @@
       @reset="onReset"
       class="q-gutter-md"
     >
-      <q-input
-        filled
-        v-model="id"
-        label="Your ID"
-        hint="ID-code"
-        lazy-rules
-        :rules="[ val => val && val.length > 0 || 'Please type your ID']"
-      />
+      
 
       <q-input
         filled
@@ -36,10 +29,10 @@
         <q-input
         filled
         v-model="language"
-        label="ภาษา"
-        hint="เลือกภาษา"
+        label=""
+        hint=""
         lazy-rules
-        :rules="[ val => val && val.length > 0 || 'กรุณาเลือกภาษาที่คุณต้องการ']"
+        :rules="[ val => val && val.length > 0 || '']"
       />
 
       <q-input
@@ -84,7 +77,7 @@ export default {
       name,
       surname,
       language,
-      id,
+      
       age,
       accept,
 
